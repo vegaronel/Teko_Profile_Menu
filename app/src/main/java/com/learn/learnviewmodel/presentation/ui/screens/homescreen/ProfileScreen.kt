@@ -65,7 +65,7 @@ import com.learn.learnviewmodel.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun ProfileScreen() {
+fun ProfileScreen(onClick: () -> Unit) {
     Scaffold(
         containerColor = Color(0xFFF3F4FA),
         topBar = {
