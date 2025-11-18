@@ -1,3 +1,41 @@
 <resources>
     <string name="app_name">Learn View Model</string>
+
+    // Titles
+    <string name="tech_status">Tech Status</string>
+    <string name="email_address">Email Address</string>
+    <string name="address">Address</string>
+    <string name="address_details">Address Details</string>
+    <string name="transportation_mode">Transportation Mode</string>
+    <string name="assistant_names">Assistant Names</string>
+    <string name="preferences">Preferences</string>
+    <string name="profile">Profile</string>'
+
+    // Subtitles
+    <string name="on">ON</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="off">OFF</string>
+    <string name="sample_email">tech@email.com</string>
+    <string name="sample_name">Juan Sebastian Dela Cruz</string>
+    <string name="sample_address">401 Hercules Village, Makati, 1209 Metro Manila</string>
+    <string name="add_contact_number">Add Contact Number</string>
+    <string name="add_address_details">Add Address Details</string>
+    <string name="add_transportation_mode">Add Transportation Mode</string>
+    <string name="add_assistant_names">Add Assistant Names</string>
+    <string name="these_fields">These fields can only be updated by contacting support.</string>
+
+
+    <string name="zcsc">ZCSC</string>
+    <string name="ticket_type">Ticket Type"</string>
+    <string name="expand_collapse">Expand/Collapse</string>
+
+    <string name="complete_your_profile">Complete your profile</string>
+    <string name="almost_done">You\'re almost done! Please complete your technician profile now to start receiving jobs.</string>
+
+    //Dialog
+    <string name="turn_off_your_tech_status">Are you sure you want to turn OFF your tech status?</string>
+    <string name="turn_on_your_tech_status">Are you sure you want to turn ON your tech status?</string>
+
+
 </resources>
