@@ -2,11 +2,14 @@ package com.learn.learnviewmodel.presentation.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.learn.learnviewmodel.presentation.ui.screens.detailsscreen.DetailsScreen
 import com.learn.learnviewmodel.presentation.ui.screens.homescreen.HomeScreen
+import com.learn.learnviewmodel.presentation.viewmodel.DummyData
 
 @Composable
 fun NavGraph(modifier : Modifier = Modifier) {
