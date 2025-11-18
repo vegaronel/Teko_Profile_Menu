@@ -40,7 +40,10 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
 import com.learn.learnviewmodel.R
+import com.learn.learnviewmodel.presentation.components.NextButton
+import com.learn.learnviewmodel.presentation.navigation.NavRoutes
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -52,6 +55,7 @@ fun AccountMenuScreen(
     onPrivacyPolicyClick: () -> Unit = {},
     onTermsClick: () -> Unit = {},
     onLogOutClick: () -> Unit = {},
+    navController : NavHostController
 ) {
     Column(
         modifier = Modifier
@@ -260,6 +264,10 @@ fun AccountMenuScreen(
                     color = Color.Gray
                 )
             }
+
+
+            // FOR TESTING ONLY DELETE AFTER
+            NextButton(onClick = { navController.navigate(NavRoutes.Profile.route) })
         }
     }
 }
