@@ -5,20 +5,31 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.learn.learnviewmodel.presentation.ui.screens.detailsscreen.DetailsScreen
-import com.learn.learnviewmodel.presentation.ui.screens.homescreen.HomeScreen
+import com.learn.learnviewmodel.presentation.ui.screens.accountMenu.AccountMenuScreen
+import com.learn.learnviewmodel.presentation.ui.screens.accountMenu.TrendsScreen
 
 @Composable
-fun NavGraph(modifier : Modifier = Modifier) {
+fun NavGraph(modifier: Modifier = Modifier) {
     val navController = rememberNavController()
 
-    NavHost(modifier = modifier, navController = navController, startDestination = NavRoutes.Home.route, builder = {
+    NavHost(
+        modifier = modifier,
+        navController = navController,
+        startDestination = NavRoutes.Home.route
+    ) {
         composable(NavRoutes.Home.route) {
-            HomeScreen(navController)
+            AccountMenuScreen(
+                onPerformanceClick = {
+                    navController.navigate(NavRoutes.TrendsScreen.route)
+                },
+                onMapClick = { /* navigate to Map screen if exists */ }
+            )
         }
-        composable(route = NavRoutes.Details.route) {
-            DetailsScreen()
-        }
-    })
 
+        composable(NavRoutes.TrendsScreen.route) {
+            TrendsScreen(
+                onBack = { navController.popBackStack() } // this allows the back button to work
+            )
+        }
+    }
 }
