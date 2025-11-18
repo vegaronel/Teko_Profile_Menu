@@ -57,4 +57,10 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+
+    val nav_version = "2.9.6"
+    // navigation
+    implementation("androidx.navigation:navigation-compose:$nav_version")
+    // view model
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.5")
 }
