@@ -10,7 +10,6 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.material3.Card
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -25,7 +24,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            AppTheme (dynamicColor = false){
+            AppTheme(dynamicColor = false) {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     GreetingPreview(modifier = Modifier.padding(innerPadding))
                 }
@@ -38,7 +37,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun GreetingPreview(modifier: Modifier = Modifier) {
     Column {
-        Box (
+        Box(
             modifier = modifier
                 .size(200.dp)
                 .background(MaterialTheme.colorScheme.primary)
